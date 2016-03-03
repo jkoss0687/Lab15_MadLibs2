@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Mad-Libs Lab 15</title>
+
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+		 <link rel="stylesheet" href="stylus.css">
+	  	
+	  	<script data-require="angular.js@*" data-semver="1.5.0" src="https://code.angularjs.org/1.5.0/angular.js"></script>
+	    
+	    <script data-require="angular-route@*" data-semver="1.5.0" src="https://code.angularjs.org/1.5.0/angular-route.js"></script>
+
+		<script type="text/javascript" src="app.js"></script>
+		<script type="text/javascript" src="service.js"></script>
+		<script type="text/javascript" src="websiteService.js"></script>
+		<script type="text/javascript" src="controller.js"></script>
+		<script type="text/javascript" src="controller2.js"></script>
+		<script type="text/javascript" src="controller3.js"></script>
+	</head>
+
+	<body ng-app='madLibRoute' class="container" ng-controller='display as disp'>
+		
+		<h1 id="madLibs">CODING MAD-LIBS</h1>
+		
+		<nav><a href="#/">Form</a> | <a href="#/view2">Story</a> | <a href="#/view3">Extra Data</a></nav>
+    	
+    	<div ng-view=""></div>
+
+	</body>
+</html>
